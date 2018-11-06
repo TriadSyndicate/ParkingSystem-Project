@@ -31,7 +31,8 @@
                 <div class="col-md-12">
                     <div class="page-header clearfix">
                         <h2 class="pull-left">Parking Details</h2>
-                        <a href="create.php" class="btn btn-success pull-right">Check-In</a>
+                        <a href="create.php" class="btn btn-success pull-right">Check-In</a> &nbsp;&nbsp;&nbsp;
+                        <a href="insert.php" class="btn btn pull-right">Add Slot</a>
                     </div>
                     <?php
                     // Include config file
@@ -59,9 +60,6 @@
                                         echo "<td>" . $row['slot_id'] . "</td>";
                                         echo "<td>" . $row['rate_id'] . "</td>";
                                         echo "<td>";
-                                            echo "<a href='read.php?id=". $row['parking_code_id'] ."' title='View Record' data-toggle='tooltip'><span class='glyphicon glyphicon-eye-open'></span></a>";
-                                           // echo "<a href='update.php?id=". $row['parking_code_id'] ."' title='Update Record' data-toggle='tooltip'><span class='glyphicon glyphicon-pencil'></span></a>";
-                                            //echo "<a href='delete.php?id=". $row['parking_code_id'] ."' title='Delete Record' data-toggle='tooltip'><span class='glyphicon glyphicon-trash'></span></a>";
                                         echo "</td>";
                                     echo "</tr>";
                                 }
